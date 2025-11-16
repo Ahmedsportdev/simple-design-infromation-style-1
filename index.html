@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nsi</title>
+    <style>
+        body{
+            background-color: #aaa;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #icon{
+            position: relative;
+            left: 40%;
+            top: -6.4px;
+            font-weight: bolder;
+        }
+        hr{
+            position: relative;
+            top: 15px;
+            font-weight: bold;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+        span{
+            position: relative;
+            top: -10px;
+        }
+        #icon{
+            position: relative;
+            left: 40%;
+            top: -6.4px;
+            font-weight: bolder;
+        }
+        div{
+            width: 500px;
+            height: 580px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 0%;
+            position: relative;
+            left: 100px;
+            top: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .f, .fo{
+            background-color: #57c1ff;
+            position: absolute;
+            left: -10px;
+        }
+        .second, .t{
+            background-color: #fff;
+            position: absolute;
+            left: -100px;
+        }
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: absolute;
+            top: 20px;
+            left: 200px;
+        }
+        button{
+            padding: 0%;
+            width: 200px;
+            height: 40px;
+            background-color: rgb(20, 172, 0) !important;
+            color: #fff;
+            border: none;
+            font-size: 17px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: absolute;
+            top: 450px;
+            left: 50px !important;
+        }
+        #hole-icon{
+            display: inline-block;
+            height: auto;
+            width: auto;
+            position: absolute;
+            top: -3px;
+            left: 120px;
+            transition: left 1s ease, right 0.5s ease;
+        }
+        #text{
+            position: absolute;
+            top: 10px;
+            left: 30px;
+        }
+        button:hover{
+            background-color: rgb(0, 136, 0) !important;
+        }
+        button:hover #hole-icon{
+            left: 140px;
+        }
+        pre{
+            position: absolute;
+            top: 100px !important;
+            left: 70px !important;
+            font-size: 20px !important;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+        }
+        .forth-h, .third-h, #second-h, #frist-h{
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        .fo{
+            position: absolute;
+            left: 50%;
+            background-color: #fff;
+            z-index: 1;
+            top: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            text-align: center;
+        }
+        .t{
+            position: absolute;
+            left: 30%;
+            z-index: 0;
+            background-color: #57c1ff;
+            top: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            text-align: center;
+        }
+        .h11{
+            position: absolute;
+            left: 100px;
+            top: -20px;
+        }
+        .jijf{
+            position: absolute;
+            top: 120px !important;
+            left: -50px !important;
+            font-size: 20px !important;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+        }
+        #oo{
+            left: -50px !important;
+            top: 400px !important;
+        }
+        .jjfjfj{
+            position: relative;
+            left: -20%;
+            top: -20%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="frist">
+        <div class="f" id="f-v-i">
+            <h1 class="o">test 1</h1>
+            <button id="o" class="f" type="submit">
+                <span id="text">Next page </span>
+                <div id="hole-icon">
+                    <hr width="30px" id="hr-icon">
+                    <span id="icon">></span>
+                </div>
+            </button>
+            <pre>
+                test decscription 1
+            </pre>
+        </div>
+    </div>
+
+    <div id="second">
+        <div class="second" id="s-v-i">
+            <h1>test 2</h1>
+            <img src="s" alt="The image">    
+        </div>
+    </div>
+
+    <div class="t third-h" id="third">
+        <div>
+            <h1 class="o h11">test 3</h1>
+            <button id="oo" class="f" type="submit">
+                <span id="text">Next page </span>
+                <div id="hole-icon">
+                    <hr width="30px" id="hr-icon">
+                    <span id="icon">></span>
+                </div>
+            </button>
+            <pre class="jijf">
+                test decscription 1
+            </pre>
+        </div>
+    </div>
+
+    <div class="fo forth-h" id="forth">
+        <div >
+            <h1 class="h11">test 4</h1>
+            <img class="jjfjfj" src="s" alt="The image">    
+        </div>
+    </div>
+
+    <script>
+        let b1 = document.getElementById("o");
+        let b2 = document.querySelector("#oo");
+        let f = document.getElementById("frist");
+        let s = document.getElementById("second");
+        let t = document.getElementById("third");
+        let fo = document.getElementById("forth");
+
+        b1.addEventListener("click", () => {
+            f.classList.toggle("forth-h");
+            s.classList.toggle("third-h");
+
+            t.classList.toggle("third-h");
+            fo.classList.toggle("forth-h");
+        });
+
+        b2.addEventListener("click", () => {
+            f.classList.toggle("forth-h");
+            s.classList.toggle("third-h");
+
+            t.classList.toggle("third-h");
+            fo.classList.toggle("forth-h");
+        });
+    </script>
+
+</body>
+</html>
